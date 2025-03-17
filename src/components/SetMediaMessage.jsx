@@ -40,7 +40,7 @@ const SetMediaMessage = () => {
     localStorage.setItem(`savedMediaMessage_${userId}`, JSON.stringify(data));
 
     alert("Data Saved Successfully!");
-    navigate("/page3"); // Redirect
+    navigate("/autocall"); // Redirect
   };
 
   return (

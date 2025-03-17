@@ -4,11 +4,11 @@ import Navbar from "./components/Navbar";
 import SetMediaMessage from "./components/SetMediaMessage";
 import Settings from "./components/Settings";
 import AutocallMessage from "./components/AutocallMessage";
-
 import ContactUs from "./components/ContactUs";
 import Login from "./components/Login";
-
 import Shareapp from "./components/Shareapp";
+
+//yyy
 import Register from "./components/Register";
 import CorporateUser from "./components/CorporateUser";
 import SingleUser from "./components/SingleUser";
@@ -16,15 +16,21 @@ import "./App.css";
 import BlockNumber from "./components/BlockNumber";
 import ProtectedRoute from "./components/ProtectedRoute";
 
+//dailybanner
+import DailyBanner from "./components/DailyBanner";
+import FestivalGraphics from "./components/FestivalGraphics";
+import FestivalReels from "./components/FestivalReels";
+import CategoryPage from "./components/CategoryPage";
+
 function App() {
   return (
     <Routes>
       <Route element={<ProtectedRoute />}></Route>
       <Route path="/home" element={<HomePage />} />
-      <Route path="/page3" element={<AutocallMessage />} />
-      <Route path="/page4" element={<SetMediaMessage />} />
-      <Route path="/page5" element={<Settings />} />
-      <Route path="/page7" element={<ContactUs />} />
+      <Route path="/autocall" element={<AutocallMessage />} />
+      <Route path="/setmedia" element={<SetMediaMessage />} />
+      <Route path="/settings" element={<Settings />} />
+      <Route path="/contactus" element={<ContactUs />} />
       <Route path="/navbar" element={<Navbar />} />
       <Route path="/" element={<Login />} />
 
@@ -33,6 +39,11 @@ function App() {
       <Route path="/singleuser" element={<SingleUser />} />
       <Route path="/corporateuser" element={<CorporateUser />} />
       <Route path="/blocknumber" element={<BlockNumber />} />
+
+      {/* daily banner */}
+      <Route path="/dailybanner" element={<DailyBanner />} />
+
+      <Route path="/category/:type" element={<CategoryPage />} />
     </Routes>
   );
 }

@@ -100,14 +100,14 @@ const AutocallMessage = () => {
         {/* Buttons */}
         <div className="flex flex-col justify-center items-center pt-8">
           {/* Set Media & Messages */}
-          <Link to="/page4">
+          <Link to="/setmedia">
             <button className="w-[250px] bg-purple-500 text-white py-2 rounded-full mb-2">
               Set Messages & Media
             </button>
           </Link>
 
           {/* Settings */}
-          <Link to="/page5">
+          <Link to="/settings">
             <button className="w-[250px] bg-purple-500 text-white py-2 rounded-full mb-2">
               Settings
             </button>

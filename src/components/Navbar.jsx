@@ -42,12 +42,12 @@ const Navbar = ({ closeMenu }) => {
           </Link>
         </li>
         <li className="font-semibold">
-          <Link to="/page5" onClick={closeMenu}>
+          <Link to="/settings" onClick={closeMenu}>
             Settings
           </Link>
         </li>
         <li className="font-semibold">
-          <Link to="/page7" onClick={closeMenu}>
+          <Link to="/shareapp" onClick={closeMenu}>
             Direct WhatsApp
           </Link>
         </li>

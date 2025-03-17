@@ -4,6 +4,7 @@ import { IoMdMenu } from "react-icons/io";
 import { Link } from "react-router-dom";
 import Navbar from "./Navbar";
 import { useNavigate } from "react-router-dom";
+import { CiShare2 } from "react-icons/ci";
 
 const HomePage = () => {
   const navigate = useNavigate();
@@ -19,7 +20,7 @@ const HomePage = () => {
 
   const [images, setImages] = useState(defaultImages);
   const [currentIndex, setCurrentIndex] = useState(0);
-  const [isAdmin, setIsAdmin] = useState(true); // Set to `true` for admin editing
+  const [isAdmin, setIsAdmin] = useState(false); // Set to `true` for admin editing
 
   // Auto-slide every 3 seconds
   useEffect(() => {
@@ -61,8 +62,8 @@ const HomePage = () => {
             onClick={() => setMenuOpen(true)}
           />
           <h2 className="text-lg font-semibold cursor-pointer">Home Page</h2>
-          <Link onClick={() => navigate(-1)}>
-            <div className="text-2xl cursor-pointer">{"<"}</div>
+          <Link to="/shareapp">
+            <CiShare2 className="text-2xl cursor-pointer" />
           </Link>
         </div>
 
@@ -128,8 +129,8 @@ const HomePage = () => {
 };
 
 const features = [
-  { label: "Auto call Message", icon: <FaPhoneAlt />, link: "/page3" },
-  { label: "Daily Banner", icon: null },
+  { label: "Auto call Message", icon: <FaPhoneAlt />, link: "/autocall" },
+  { label: "Daily Banner", icon: null, link: "/dailybanner" },
   { label: "Mini website", icon: null },
   { label: "Bulk Messenger", icon: null },
   { label: "Voter APP", icon: null },

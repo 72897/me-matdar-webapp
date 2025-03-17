@@ -117,7 +117,7 @@ const Settings = () => {
 
         {/* Back Button */}
         <div className="flex justify-center mt-4">
-          <Link to="/page3">
+          <Link to="/autocall">
             <button className="bg-purple-500 text-white px-6 py-2 rounded-full">
               Back
             </button>
